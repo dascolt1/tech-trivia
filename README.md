@@ -1,3 +1,5 @@
+Tech Trivia App made with React.js using React Hooks.  Local Storage is used to save score and lives in local storage so if a user refreshes the webpage their data remains.  It uses axios to make a GET request to the Quizapi.io API and store their questions and answers into state.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
