@@ -22,8 +22,8 @@ function App() {
     questionHandler();
     const savedScore = localStorage.getItem('score');
     const savedLives = localStorage.getItem('lives');
-    setScore(parseInt(savedScore));
-    setLives(parseInt(savedLives));
+    //setScore(parseInt(savedScore));
+    //setLives(parseInt(savedLives));
   }, []);
 
   useEffect(() => {
