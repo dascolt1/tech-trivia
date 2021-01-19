@@ -1,0 +1,85 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #B53CFB, #8907FB);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  padding: 1.5em;
+  color: #F6EA1E;
+}
+
+.card {
+  padding: 5rem;
+  margin: 0 25rem;
+  background-image: linear-gradient(120deg, #FAA601, #FBBC00);
+  color: white;
+  border-radius: .5rem;
+  box-shadow: 3px 3px 10px #FAA601;
+  max-width: 100vw;
+}
+
+.question {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.answer {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 1rem;
+}
+
+.btn {
+  padding: 1rem;
+  background-image: linear-gradient(120deg, #B53CFB, #8907FB);
+  color: white;
+  border-color: #8907FB;
+  font-size: 1rem;
+  border: 0;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 100%;
+}
+
+.btn:hover, .btn:focus {
+  color: white;
+  background-image:none;
+  background-color:#FC8301;
+  outline: 4px solid #FC8301;
+  cursor: pointer;
+}
+
+.final-score {
+  padding-bottom: 1rem;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.score-board p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.lives {
+  display: flex;
+  justify-content: space-evenly;
+  color: red;
+}
+
+.lives i {
+  padding-right: .5rem;
+  font-size: 1.5em;
+}
