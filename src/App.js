@@ -79,7 +79,7 @@ function App() {
   if(lives !== 0){
     return (
       <div className="App">
-        <h1 className="title">Tech Interview Trivia</h1>
+        <h1 className="title">Tech Trivia</h1>
         <div className="card">
           <Scoreboard 
           score={score} 
