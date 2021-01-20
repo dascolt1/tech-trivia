@@ -31,14 +31,12 @@ function App() {
     localStorage.setItem('lives', lives);
   }, [score, lives]);
 
-   
-
   //sets questions into state using axios GET request
   const questionHandler = () => {
     axios.get(`https://quizapi.io/api/v1/questions?apiKey=${API_KEY}`)
     .then(blob => {
       let randomQuestion = generateRandomNumber(blob.data.length);
-      if(blob.data[randomQuestion].multiple_correct_answers === 'false' && blob.data[randomQuestion].correct_answer !== null) {
+      if(blob.data[randomQuestion].multiple_correct_answers === 'false') {
         setQuestion(blob.data[randomQuestion].question);
         const api_answers = blob.data[randomQuestion].answers;
         setAnswers({...answers,
